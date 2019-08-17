@@ -1,0 +1,26 @@
+/*-- 错误提示 --*/
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 30rpx;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error_prompt {
+  background-color: #606060;
+  height: 90rpx;
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error_prompt text {
+  font-size: 28rpx;
+  color: #fff;
+  margin: 0 10rpx;
+}

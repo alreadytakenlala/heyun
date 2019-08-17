@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/*-- no news --*/
+.no_message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.no_message image {
+  width: 300rpx;
+  height: 300rpx;
+}
+.no_message text {
+  font-size: 28rpx;
+  color: #808080;
+  padding: 20rpx;
+}

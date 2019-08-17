@@ -1,0 +1,14 @@
+<view class='container'>
+  <view wx:if='{{showSMS}}' class='sms'>
+    <view class='img_section'>
+      <image src='/image/sms.png'/>
+    </view>
+    <view class='msg_section'>
+      <text>10655020057702000043</text>
+      <view class='content'>...育】短信验证码 <text>{{verCode}}</text>，请在30分钟</view>
+    </view>
+    <view class='btn_section'>
+      <text catchtap='copyEvent'>复制</text>
+    </view>
+  </view>
+</view>

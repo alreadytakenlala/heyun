@@ -1,0 +1,148 @@
+page {
+  background-color: #F6F5F4;
+}
+/*-- 接收对象和通知类型 --*/
+.re_obj, .noti_type {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  border-bottom: 1rpx solid #E9E9E9;
+  background-color: #fffffb;
+}
+.re_obj label, .noti_type label {
+  width: 25%;
+  font-size: 34rpx;
+  line-height: 100rpx;
+  margin-left: 30rpx;
+  color: #333;
+}
+.re_obj input, .noti_type input {
+  width: 60%;
+  height: 100%;
+  color: #454545;
+  font-size: 32rpx;
+}
+.re_obj text {
+  width: 15%;
+  color: #454545;
+  font-size: 32rpx;
+  line-height: 100rpx;
+}
+
+/*-- 通知内容 --*/
+.noti_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fffffb;
+}
+.noti_nav {
+  width: 100%;
+  height: 100rpx;
+  background-color: #F6F5F4;
+  display: flex;
+  align-items: center;
+}
+.noti_nav image {
+  width: 40rpx;
+  height: 45rpx;
+  transform: rotateX(180deg);
+  margin-left: 30rpx;
+}
+.noti_nav text {
+  font-size: 34rpx;
+  line-height: 100rpx;
+  margin-left: 10rpx;
+}
+.n_content {
+  padding: 20rpx 30rpx;
+}
+.n_content textarea {
+  min-height: 300rpx;
+}
+.n_content label {
+  font-size: 26rpx;
+  color: #9F9E9E;
+  float:right;
+}
+
+/*-- 落款 --*/
+.signature {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  background-color: #fffffb;
+  border-top: 1rpx solid #E9E9E9;
+  border-bottom: 1rpx solid #E9E9E9;
+}
+.signature label {
+  width: 15%;
+  font-size: 34rpx;
+  line-height: 100rpx;
+  margin-left: 30rpx;
+  color: #333;
+}
+.signature input {
+  width: 85%;
+  height: 100%;
+  font-size: 32rpx;
+  color: #454545;
+}
+
+/*-- 发送选择 --*/
+.timed_send, .send_self {
+  width: 100%;
+  height: 100rpx;
+  background-color: #fffffb;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1rpx solid #E9E9E9;
+}
+.timed_send {
+  margin-top: 30rpx;
+  border-top: 1rpx solid #E9E9E9;
+}
+.timed_send image, .send_self image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 30rpx;
+}
+.timed_send text, .send_self text {
+  color: #454545;
+  font-size: 32rpx;
+  margin-left: 10rpx;
+}
+
+/*-- 页脚导航栏 --*/
+.voice {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  border-top: 1rpx solid #C8C8C5;
+  align-items: center;
+  background-color: #F6F5F4;
+}
+.voice view {
+  height: 70rpx;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.voice image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.voice_text {
+  border-right: 1rpx solid #C8C8C5;
+}
+.voice text {
+  font-size: 32rpx;
+  color: #333;
+  margin-left: 30rpx;
+}

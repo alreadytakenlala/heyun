@@ -1,0 +1,138 @@
+/*-- 发通知 --*/
+.send_add {
+  width: 100%;
+  height: 200rpx;
+  margin-top: 30rpx;
+  background-color: #FEF2E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.send_add image {
+  width: 65rpx;
+  height: 65rpx;
+  margin-bottom: 30rpx;
+}
+.send_add text {
+  font-size: 28rpx;
+  color: #E1A674;
+}
+.send .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content image {
+  width: 180rpx;
+  height: 250rpx;
+  margin-top: 200rpx;
+}
+.content text {
+  margin-top: 50rpx;
+  font-size: 28rpx;
+  color: #959394;
+  letter-spacing: 5rpx;
+}
+
+/*-- 收通知 --*/
+.receive {
+  padding: 20rpx;
+  margin-bottom: 100rpx;
+}
+.re_noti {
+  width: 100%;
+  margin-bottom: 20rpx;
+  background-color: #F6F5F4;
+  border: 1rpx solid #E7E7E7;
+}
+.re_noti_content {
+  display: flex;
+  flex-direction: row;
+}
+.re_type {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+.re_type image {
+  width: 68rpx;
+  height: 120rpx;
+  margin-left: 5%;
+}
+.re_info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.re_name {
+  font-size: 32rpx;
+  line-height: 50rpx;
+}
+.re_content {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #959394;
+  display: -webkit-box; /* 流体布局 */
+  -webkit-line-clamp: 1; /* 多行文字溢出点点点... */
+  -webkit-box-orient: vertical; /* 从上向下垂直排列子元素 */
+  word-break: break-all; /* 允许在单词内换行 */
+  text-overflow: ellipsis; /* 显示省略符号来代表被修剪的文本 */
+  overflow: hidden;
+}
+.re_go {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.re_go image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.re_time {
+  margin-top: 20rpx;
+  border-top: 1rpx solid #E9E9E9;
+}
+.re_time text {
+  font-size: 28rpx;
+  color: #959394;
+  line-height: 50rpx;
+  margin-left: 30rpx;
+}
+
+/*-- 选择通知类型 按钮 --*/
+.hron_but {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #C8C8C5;
+  background-color: #fffffb;
+}
+.hron_but button {
+  width: 50%;
+  background: none;
+  font-size: 26rpx;
+  color: #959394;
+}
+.hron_but view {
+  width: 50%;
+  height: 110rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hron_but image {
+  width: 50rpx;
+  height: 60rpx;
+}
+.hron_but text {
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #959394;
+}

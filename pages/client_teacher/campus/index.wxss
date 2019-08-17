@@ -1,0 +1,106 @@
+/*-- check in --*/
+.check_in {
+  width: 100%;
+  height: 150rpx;
+  border-bottom: 1rpx solid #C8C8C5;
+  display: flex;
+  flex-direction: row;
+}
+.cn_left {
+  width: 150rpx;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cn_midden {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cn_right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cn_left image {
+  width: 120rpx;
+  height: 120rpx;
+}
+.cn_name {
+  font-size: 34rpx;
+  color: #333;
+  display: block;
+  line-height: 50rpx;
+  margin-left: 20rpx;
+}
+.cn_school {
+  width: 90%;
+  font-size: 26rpx;
+  display: block;
+  line-height: 50rpx;
+  margin-left: 20rpx;
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cn_right button {
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 165rpx;
+  font-size: 30rpx;
+  color: #333;
+  float: right;
+  margin: 45rpx 10rpx;
+  background-color: #fffffb;
+  border-radius: 30rpx;
+  border: 1rpx solid #666; 
+}
+
+/*-- check else --*/
+.check_in > image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.check_in .text {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text text {
+  font-size: 34rpx;
+  color: #333;
+}
+
+/*-- modules --*/
+.modules {
+  margin-top: 50rpx;
+  width: 100%;
+}
+.module {
+  width: 32.8%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.module image {
+  width: 125rpx;
+  height: 125rpx;
+}
+.module text {
+  text-align: center;
+  font-size: 28rpx;
+  color: #686868;
+  margin-top: 10rpx;
+  height: 70rpx;
+}

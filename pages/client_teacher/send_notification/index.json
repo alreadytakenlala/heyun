@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "发送通知",
+  "usingComponents": {
+    "signature": "/components/signature/index"
+  }
+}

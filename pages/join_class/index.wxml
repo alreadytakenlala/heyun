@@ -1,0 +1,27 @@
+<view class='container'>
+  <view class='module' catchtap='onScanCode'>
+    <image src='/image/join_code_icon.png'/>
+    <view class='content'>
+      <text>扫码加入</text>
+      <text>扫描老师提供的二维码</text>
+    </view>
+    <image src='/image/menu_go.png'/>
+  </view>
+  <view class='module' catchtap='classCode'>
+    <image src='/image/join_class_code_icon.png'/>
+    <view class='content'>
+      <text>班级码加入</text>
+      <text>输入老师提供的班级码</text>
+    </view>
+    <image src='/image/menu_go.png'/>
+  </view>
+  <view class='module' style='margin-top:30rpx'  catchtap='onApplicationsJoin'>
+    <image src='/image/join_apply_icon.png'/>
+    <view class='content'>
+      <text>申请加入</text>
+      <text>输入孩子信息提交审核</text>
+    </view>
+    <image src='/image/menu_go.png'/>
+  </view>
+  <text class='jump_over' decode='true' catchtap='jumpOver'>跳过此步&gt;&gt;</text>
+</view>

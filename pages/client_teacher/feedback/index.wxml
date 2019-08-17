@@ -1,0 +1,15 @@
+<view class='container'>
+  <!-- 列表 --> 
+  <view class="claim {{selected == index ? 'active':''}}" wx:for='{{claim}}' wx:key='{{index}}' data-text='{{index}}' catchtap='selected'>
+    <view class='content'>
+      <text>{{item}}</text>
+    </view>
+    <view class='img' wx:if='{{selected == index}}'>
+      <image src='/image/setting_selected.png'/>
+    </view>
+  </view>
+  <!-- 确定按钮 -->
+  <view class='determine'>
+      <button catchtap='determine'>确定</button>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<view class='container'>
+  <!-- 未毕业角色列表 -->
+  <view class="role {{logoRole == index ? 'activeModu':''}}" wx:for='{{roleList}}' wx:key='{{index}}' data-graduation='false' data-index='{{index}}' catchtap='selectedRole'>
+    <image src='/image/logo.png'/>
+    <view class='info'>
+      <view class='info_up'>
+        <text>{{item.name}}</text>
+        <text class="{{item.career == '老师' ? 'acreerTeacher':'acreerParent'}}">{{item.career}}</text>
+      </view>
+      <view class='info_down'>
+        <text>{{item.school}}</text>
+        <text hidden='{{!item.bj}}'>{{item.bj}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 已毕业角色列表 -->
+  <view class='down_list' catchtap='showGraduationRole'>
+    <text>{{showGraduationRole ? '点击收起已毕业角色':'点击打开已毕业角色'}}</text>
+    <image class="{{showGraduationRole ? 'rotate90':''}}" src='/image/menu_go.png'/>
+  </view>
+  <view wx:if='{{showGraduationRole}}' class='role' wx:for='{{graduationRoleList}}' wx:key='{{index}}' data-graduation='true' data-index='{{index}}' catchtap='selectedRole'>
+    <image src='/image/logo.png'/>
+    <view class='info'>
+      <view class='info_up'>
+        <text>{{item.name}}</text>
+        <text class="{{item.career == '老师' ? 'acreerTeacher':'acreerParent'}}">{{item.career}}</text>
+      </view>
+      <view class='info_down'>
+        <text>{{item.school}}</text>
+        <text>{{item.bj}}</text>
+      </view>
+    </view>
+  </view>
+</view>

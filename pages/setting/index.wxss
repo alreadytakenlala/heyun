@@ -1,0 +1,63 @@
+page {
+  background-color: #F6F5F4;
+}
+.modules {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* 决定主轴的方向 */
+  margin-top: 30rpx;
+}
+.module {
+  width: 100%;
+  height: 100rpx;
+  background-color: #FFFFFB;
+  border-bottom: 1rpx solid #DCDCDC;
+  display: flex;
+  align-items: center;
+}
+.module text {
+  margin: 0 30rpx;
+}
+.module text:first-child {
+  font-size: 32rpx;
+  color: #333;
+}
+.module .module:first-child {
+  border-top: 1rpx solid #DCDCDC;
+}
+.module image {
+  position: absolute;
+  right: 30rpx;
+}
+.modules text:last-child {
+  position: absolute;
+  right: 10rpx;
+  font-size: 32rpx;
+  color: #FFA500;
+}
+image.open {
+  width: 50rpx;
+  height: 50rpx;
+}
+image.select {
+  width: 80rpx;
+  height: 50rpx;
+}
+.logout {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  margin-top: 30rpx;
+  align-items: center;
+  justify-content: center;
+}
+.logout text {
+  width: 80%;
+  height: 90rpx;
+  border-radius: 45rpx;
+  background-color: #EA5636;
+  text-align: center;
+  line-height: 90rpx;
+  color: #FFFFFB;
+  font-size: 38rpx;
+}

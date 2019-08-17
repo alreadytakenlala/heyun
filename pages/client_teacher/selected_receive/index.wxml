@@ -1,0 +1,24 @@
+<view class='container'>
+  <view class='modules'>
+    <view>
+      <text>家长</text>
+    </view>
+    <view class='module' catchtap='sendClass'>
+      <text>发给全班</text>
+      <image src='/image/menu_go.png'/>
+    </view>
+    <view class='module' data-text='发给个人' catchtap='sendIndividual'>
+      <text>发给个人</text>
+      <image src='/image/menu_go.png'/>
+    </view>
+  </view>
+  <view class='modules'>
+    <view class='title'>
+      <text>老师</text>
+    </view>
+    <view class='module' data-text='发给老师' catchtap='sendIndividual'>
+      <text>发给老师</text>
+      <image src='/image/menu_go.png'/>
+    </view>
+  </view>
+</view>

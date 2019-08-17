@@ -1,0 +1,80 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/study/index",
+    "pages/news/index",
+    "pages/me/index",
+    "pages/logo/index",
+    "pages/switch_roles/index",
+    "pages/setting/index",
+    "pages/registered/index",
+    "pages/join_class/index",
+    "pages/join/index",
+    "pages/class_code/index",
+    "pages/tackphoto/index",
+    "pages/notification_details/index",
+    "pages/add_subscription/index",
+    "pages/applications_join/index",
+    "pages/choose_city_bj/index",
+    "pages/my_class/index",
+    "pages/client_parent/work/index",
+    "pages/client_parent/notification/index",
+    "pages/client_parent/work_detail/index",
+    "pages/client_teacher/send_individual/index",
+    "pages/client_teacher/campus/index",
+    "pages/client_teacher/message/index",
+    "pages/client_teacher/work/index",
+    "pages/client_teacher/homework/index",
+    "pages/client_teacher/choose/index",
+    "pages/client_teacher/feedback/index",
+    "pages/client_teacher/notification/index",
+    "pages/client_teacher/send_notification/index",
+    "pages/client_teacher/selected_receive/index",
+    "pages/client_teacher/send_class/index",
+    "pages/client_teacher/performance/index",
+    "pages/client_teacher/address_book/index",
+    "pages/client_teacher/evaluation/index",
+    "pages/client_teacher/news/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f0fcff",
+    "navigationBarTitleText": "和云教育",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fffffb"
+  },
+  "tabBar": {
+    "color": "#818080",
+    "selectedColor": "#427516",
+    "borderStyle": "black",
+    "backgroundColor": "#F9F9F9",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "校园",
+        "iconPath": "image/xiaoyuan_default_parent.png",
+        "selectedIconPath": "image/xiaoyuan_check_parent.png"
+      },
+      {
+        "pagePath": "pages/study/index",
+        "text": "学习",
+        "iconPath": "image/study_default_parent.png",
+        "selectedIconPath": "image/study_check_parent.png"
+      },
+      {
+        "pagePath": "pages/news/index",
+        "text": "资讯",
+        "iconPath": "image/information_default_parent.png",
+        "selectedIconPath": "image/information_check_parent.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我",
+        "iconPath": "image/me_default_parent.png",
+        "selectedIconPath": "image/me_check_parent.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

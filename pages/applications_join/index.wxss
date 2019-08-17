@@ -1,0 +1,106 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #EEEEEE;
+}
+/*-- 选择区域和班级 --*/
+.select_region {
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #CBCBCB;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFB;
+}
+.select_region text:first-child {
+  font-size: 32rpx;
+  color: #000;
+  margin-left: 30rpx;
+}
+.select_region text:nth-child(2) {
+  font-size: 32rpx;
+  color: #888888;
+  position: absolute;
+  right: 100rpx;
+}
+.menu_go {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 30rpx;
+}
+/*-- 说明栏 --*/
+.description {
+  width: 100%;
+}
+.description > text {
+  display: inline-block;
+  font-size: 30rpx;
+  color: black;
+  margin: 30rpx 30rpx;
+}
+.des_content {
+  display: flex;
+  flex-direction: row;
+}
+.des_content_left {
+  width: 10%;
+}
+.des_content_right {
+  width: 85%;
+}
+.des_content_left image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 30rpx;
+}
+.des_content_right text {
+  font-size: 30rpx;
+  color: #616161;
+  margin-right: 30rpx;
+}
+/*-- 申请加入按钮 --*/
+.btn {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+.join_btn {
+  width: 90%;
+  border-radius: 45rpx;
+  text-align: center;
+  line-height: 90rpx;
+  color: #FFFFFB;
+  font-size: 32rpx;
+  background-color: #89C156;
+}
+/*-- 说明二 --*/
+.description .light_color {
+  color: #616161;
+}
+/*-- 其他服务 --*/
+.other_service {
+  background-color: white;
+  width: 90%;
+  border-radius: 45rpx;
+  border: 1rpx solid #94B56E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other_service image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.other_service text:nth-child(2) {
+  color: #94B377;
+  font-size: 32rpx;
+  margin-left: 30rpx;
+}
+.other_service text:last-child {
+  color: #585858;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}

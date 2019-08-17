@@ -1,0 +1,9 @@
+<view class='line'></view>
+<view class='container'>
+  <input placeholder='请输入班级码' placeholder-class='placeholder'/>
+  <text class='prompt'>请询问班主任获得班级码</text>
+  <!-- 加入 -->
+  <view class='complete' catchtap='complete'>
+    <text>加入</text>
+  </view>
+</view>

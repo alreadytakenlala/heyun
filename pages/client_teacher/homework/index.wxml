@@ -1,0 +1,66 @@
+<!-- 布置作业表单 -->
+<view class='container'>
+
+  <!-- 科目和班级 -->
+  <view class='class'>
+    <label>班级</label>
+    <input class='omit' data-text="班级" value="{{chooseClass}}" placeholder='请选择班级' placeholder-style="font-size:32rpx;color:#EAEAEC" disabled='true' catchtap='choose'/>
+  </view>
+  <view class='subject'>
+    <label>科目</label>
+    <input class='omit' data-text="科目" value="{{chooseSubject}}" placeholder='请选择科目' placeholder-style="font-size:32rpx;color:#EAEAEC" disabled='true' catchtap='choose'/>
+  </view>
+
+  <!-- 作业内容 -->
+  <view class='work_content'>
+    <view class='work_h'>
+      <text class='work_h_left'>作业内容</text>
+      <text catchtap='clearContent' class='work_h_right'>清空内容</text>
+    </view>
+    <view class='w_content'>
+      <textarea hidden='{{showSign || showTPC}}' placeholder='点击输入作业内容' placeholder-style="font-size:32rpx;color:#EAEAEC" maxlength='250' auto-height='true' bindinput='contentInput' value='{{workContent}}'></textarea>
+      <label>{{wordCount}}/250</label>
+    </view>
+  </view>
+
+  <!-- 拍照功能 -->
+  <view class='take_photo'>
+    <image src='/image/take_photo.png' catchtap='onShowTPC'/>
+    <view class='photo'>
+      <image data-url='{{item}}' wx:for="{{photoArray}}" wx:key="{{index}}" src='{{item}}' catchtap='onPreviewImage'/>
+    </view>
+  </view>
+  <tphoto wx:if='{{showTPC}}' bind:hideComponent='onHTPC' bind:getFromAlbum='onGetFromAlbum' bind:takePhoto='onTakePhoto'/>
+
+  <!-- 反馈和落款 -->
+  <view class='feedback'>
+    <label>反馈要求</label>
+    <input class='omit' value='{{chooseClaim}}' disabled='true' catchtap='onGoSignature'/>
+    <image src='/image/menu_go.png' catchtap='onGoSignature'/>
+  </view>
+  <view class='signature'>
+    <label>落款</label>
+    <input class='omit' value='{{sign}}' disabled='true' catchtap='showSign'/>
+    <image src='/image/menu_go.png' catchtap='showSign'/>
+  </view>
+  <signature showSign='{{showSign}}' signatureList='{{signList}}' bind:onHideSign='hideSign' bind:onChanSele='chanSele'/>
+  <!-- 页脚导航栏 -->
+  <view class='voice'>
+      <view class='voice_text'>
+        <image src='/image/voice_text.png'/>
+        <text>语音转文字</text>
+      </view>
+      <view class='send_voice'>
+        <image src='/image/send_voice.png'/>
+        <text>发语音作业</text>
+      </view>
+      <view class='send' catchtap='onComplete'>
+        <image src='/image/plane.png'/>
+        <text>发布</text>
+      </view>
+  </view>
+</view>
+<!-- 发送成功提示 -->
+<spro wx:if='{{showSendSuccess}}' promptMsg="作业发布成功"/>
+<!-- 错误提示 -->
+<signal wx:if="{{errorPrompt.length > 0}}" errorPrompt='{{errorPrompt}}'/>

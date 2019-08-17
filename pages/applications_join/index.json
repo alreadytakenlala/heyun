@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "搜索班级",
+  "usingComponents": {
+    "signal": "/components/signal/index"
+  }
+}

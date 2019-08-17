@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "新用户注册",
+  "usingComponents": {
+    "signal": "/components/signal/index",
+    "sms": "/components/sms/index"
+  }
+}

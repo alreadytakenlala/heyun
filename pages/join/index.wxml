@@ -1,0 +1,22 @@
+<view class='line'></view>
+<view class='container'>
+  <!-- 名字栏 -->
+  <view class='child_name'>
+    <input placeholder='请输入您孩子的名字' placeholder-class='placeholder' value='{{nameValue}}' bindinput='onNameInput'/>
+  </view>
+  <!-- 性别栏 -->
+  <view class='gender'>
+    <text>孩子性别</text>
+    <view class='check_box'>
+      <image wx:if='{{gender == 1}}' src='/image/check_box.png' data-text='0' catchtap='onSelectGender'/>
+      <image wx:else src='/image/check_box_sd.png' data-text='0' catchtap='onSelectGender'/>
+      <text data-text='0' catchtap='onSelectGender'>男</text>
+    </view>
+    <view class='check_box'>
+      <image wx:if='{{gender == 0}}' src='/image/check_box.png' data-text='1' catchtap='onSelectGender'/>
+      <image wx:else src='/image/check_box_sd.png' data-text='1' catchtap='onSelectGender'/>
+      <text data-text='1' catchtap='onSelectGender'>女</text>
+    </view>
+  </view>
+  <complete bind:complete='onComplete'/>
+</view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "资讯",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#E5E5E5",
+  "usingComponents": {
+    "news": "/components/news/index"
+  }
+}

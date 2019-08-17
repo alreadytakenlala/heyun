@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*-- 搜索栏 --*/
+.search {
+  width: 100%;
+  height: 100rpx;
+  background-color: #CACACC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search image {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  margin-left: -150rpx;
+}
+.search input {
+  width: 95%;
+  height: 80rpx;
+  box-sizing: border-box;
+  border-radius: 40rpx;
+  background-color: #fffffb;
+  font-size: 32rpx;
+  color: #333;
+}
+.search:hover image, search:focus image {
+  visibility: hidden;
+}
+.search input:focus .placeholder, .search input:hover .placeholder {
+  text-align: left;
+  margin-left: 10rpx;
+}
+.search input:focus, .search input:hover {
+  padding-left: 20rpx;
+}
+.placeholder {
+  text-align: center;
+}
+.placeholder {
+  text-align: center;
+}
+
+/*-- 模块 --*/
+.module {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list_head, .persons {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F6F5F4;
+  border-bottom: 1rpx solid #D7D6D4;
+}
+.persons {
+  height: 120rpx;
+  background-color: #FFFFFB;
+  border-bottom: 1rpx solid #F6F5F4;
+}
+.list_head > view {
+  position: absolute;
+  right: 30rpx;
+  display: flex;
+  justify-content: row;
+}
+.drop image {
+  width: 30rpx;
+  height: 50rpx;
+}
+.drop text {
+  margin-right: 15rpx;
+}
+.list_head > image, .persons image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 20rpx 0 30rpx;
+}
+.persons image.logo {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 20rpx 0 0;
+}
+.list_head text {
+  font-size: 32rpx;
+  color: #333;
+}
+.person_name {
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+}
+.parent {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 70rpx;
+}
+.son {
+  font-size: 28rpx;
+  color: #898989;
+  line-height: 30rpx;
+}
+.grown {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 120rpx;
+}
+.rotate90 {
+  transform:rotate(90deg);
+}
+
+/*-- 完成按钮 --*/
+.complete {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-top: 1rpx solid #C8C8C5;
+  background-color: #CACACC;
+}
+.complete image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.complete text {
+  margin-left: 30rpx;
+}

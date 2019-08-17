@@ -1,0 +1,52 @@
+.head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30rpx;
+}
+.back {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 23%;
+  z-index: -1;
+}
+.head image {
+  margin-top: 20%;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+.head text:nth-child(2) {
+  font-size: 38rpx;
+  line-height: 60rpx;
+}
+.head text:last-child {
+  color: #333;
+  font-size: 28rpx;
+}
+.modules {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center; /*align-items 属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。*/
+  border-top: 1rpx solid #E3E3E3;
+}
+.modules image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.modules image:first-child {
+  margin: 0 30rpx;
+}
+.modules image:last-child {
+  position: absolute;
+  right: 30rpx;
+}
+.modules text {
+  font-size: 32rpx;
+  color: #333;
+}

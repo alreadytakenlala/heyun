@@ -1,0 +1,157 @@
+/*-- 签到栏 --*/
+.check_in {
+  width: 100%;
+  height: 150rpx;
+  border-bottom: 1rpx solid #C8C8C5;
+  display: flex;
+  justify-content: center;
+}
+.cn_left {
+  width: 150rpx;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.cn_midden {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  float: left;
+}
+.cn_right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+.cn_left image {
+  width: 120rpx;
+  height: 120rpx;
+}
+.cn_name {
+  font-size: 34rpx;
+  color: #333;
+  display: block;
+  line-height: 50rpx;
+  margin-left: 20rpx;
+}
+.cn_bj {
+  font-size: 26rpx;
+  line-height: 50rpx;
+  margin-left: 20rpx;
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cn_right button {
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 165rpx;
+  font-size: 30rpx;
+  color: #333;
+  float: right;
+  margin: 45rpx 10rpx;
+  background-color: #fffffb;
+  border-radius: 30rpx;
+  border: 1rpx solid #666; 
+}
+.check_in > image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.check_in .text {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text text {
+  font-size: 34rpx;
+  color: #333;
+}
+
+/*-- 模块列表 --*/
+.modules {
+  margin-top: 50rpx;
+  width: 100%;
+}
+.module {
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+.module image {
+  width: 125rpx;
+  height: 125rpx;
+}
+.narration {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30rpx;
+}
+.title {
+  font-size: 32rpx;
+  color: #333333;
+}
+.description {
+  font-size: 28rpx;
+  color: #929292;
+}
+/*-- 登录弹屏 --*/
+.logo_screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content image {
+  width: 572rpx;
+  height: 308rpx;
+  margin-bottom: 40rpx;
+}
+.content text {
+  color: white;
+  font-size: 36rpx;
+}
+.content view {
+  width: 80%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40rpx;
+  border-radius: 60rpx;
+}
+.logo {
+  background-color: #89C156;
+}
+.register {
+  background-color: #FEA821;
+}

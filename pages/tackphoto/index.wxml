@@ -1,0 +1,14 @@
+<camera binderror='preventOpeningCamera'></camera>
+<view class='down_region'>
+  <view class='down_region_up'>拍摄选项</view>
+  <view class='down_region_down'>
+    <view class='album'>
+      <image wx:if='{{tempImagePath}}' src='{{tempImagePath}}'/>
+      <text wx:else catchtap='openAlbum'>相册</text>
+    </view>
+    <view class='take'><view>
+      <text catchtap='takePhoto'>拍照</text>
+    </view></view>
+    <view class='complete'><text catchtap='onComplete'>完成</text></view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+  <!-- 完成 -->
+  <view class='complete' catchtap='onComplete'>
+    <text>完成</text>
+  </view>

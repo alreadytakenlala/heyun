@@ -1,0 +1,14 @@
+<view class='container' data-target='self' hidden='{{!showSign}}' catchtap='hideComponent'>
+  <view class='signaturebox'>
+    <view class='nav'>
+      <text>选择落款</text>
+    </view>
+    <view class='signature' wx:for='{{signatureList}}' wx:key='{{index}}' data-text='{{index}}' bindtap='seleted'>
+      <text>{{item}}</text>
+      <image wx:if='{{selected == index}}' src='/image/score_selected.png'/>
+    </view>
+  </view>
+  <view data-target='self' class='cancel' catchtap='hideComponent'>
+    <text>取消</text>
+  </view>
+</view>

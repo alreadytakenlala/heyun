@@ -1,0 +1,22 @@
+<view class='work_list'>
+  <view class='module'>
+    <view class='module_up'>
+      <view class='up_left'>
+        <text>{{subject}}</text>
+        <view></view>
+      </view>
+      <view class='up_midden'>
+        <text>{{signature}}</text>
+      </view>
+      <view class='up_right'>
+        <text>{{time}}</text>
+      </view>
+    </view>
+    <view class='content'>
+      <text>{{content}}</text>
+    </view>
+    <view class='module_down'>
+      <text wx:if='{{status == 0}}'>已完成</text>
+    </view>
+  </view>
+</view>

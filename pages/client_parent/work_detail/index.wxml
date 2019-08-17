@@ -1,0 +1,48 @@
+<view class='container'>
+  <!-- 作业 -->
+  <view class='module'>
+    <view class='module_up'>
+      <view class='up_left'>
+        <text>{{work.subject}}</text>
+        <view></view>
+      </view>
+      <view class='up_midden'>
+        <text>{{work.signature}}</text>
+      </view>
+      <view class='up_right'>
+        <text>{{work.time}}</text>
+      </view>
+    </view>
+    <view class='content'>
+      <text>{{work.content}}</text>
+    </view>
+  </view>
+  <!-- 优秀作品展 -->
+  <view class='module'>
+    <text class='module_title'>优秀作品展</text>
+    <view class='module_content'>
+      <text class=''>老师还没有上传优秀作品哦~</text>
+    </view>
+  </view>
+  <!-- 晒作业 -->
+  <view class='module'>
+    <text class='module_title'>家长晒作业</text>
+    <view class='module_content'>
+      <text>哇哦，我要第一个</text>
+      <text class='szy_btn'>晒作业</text>
+    </view>
+  </view>
+  <!-- 评论 -->
+  <view class='module'>
+    <view class='comment_title'>
+      <text>评论</text>
+    </view>
+    <view class='comment_content'>
+      <image src='/image/gd_album_comment_default.png'/>
+      <text>暂无评论</text>
+    </view>
+  </view>
+</view>
+<view class='comment_input'>
+  <input type='text' placeholder='来说两句吧' placeholder-class='placeholder'></input>
+</view>

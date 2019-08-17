@@ -1,0 +1,6 @@
+<!-- 错误提示 -->
+<view class='footer' hidden='{{hide}}'>
+  <view class='error_prompt'>
+    <text>{{errorPrompt}}</text>
+  </view>
+</view>

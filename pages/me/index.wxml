@@ -1,0 +1,14 @@
+<view class='container'>
+  <image class='back' src='/image/meback.jpg'/>
+  <view class='head'>
+    <image src='/image/logo_bigborder.jpg'/>
+    <text wx:if='{{accountNumber.length != 0}}'>{{userInfo.name ? userInfo.name : '还没有绑定名字'}}</text>
+    <text wx:else catchtap='onSwitchLogo'>立即登录</text>
+    <text>{{userInfo.career}}</text>
+  </view>
+  <view hidden="{{(item.title == '切换角色' && !accountNumber) || (item.title == '加入班级' && !accountNumber)}}" class='modules' wx:for='{{modules}}' wx:key='{{index}}' data-url='{{item.switchUrl}}' catchtap='selectedModules'>
+    <image src='{{item.icoUrl}}'/>
+    <text>{{item.title}}</text>
+    <image src='/image/menu_go.png'/>
+  </view>
+</view>

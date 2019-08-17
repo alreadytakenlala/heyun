@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='classification'>
+    <text wx:for='{{gradeList}}' wx:key='{{index}}' style="{{grade == index ? 'background-color:#FAF8F5':''}}" catchtap='onSwitchGrade' data-index='{{index}}'>{{item}}</text>
+  </view>
+  <view class='subscription'>
+    <view class='topic' wx:for='{{topicList}}' wx:key='{{index}}'>
+      <image class='ico' src='{{item.icoUrl}}'/>
+      <view class='content'>
+        <text>{{item.title}}</text>
+        <text>{{item.subscriptionNumber}}订阅</text>
+      </view>
+      <image wx:if='{{!item.hasSubscription}}' class='add' src='/image/group_add_icon.png' data-index='{{index}}' data-text='{{item.classification}}' catchtap='onAddSubscription'/>
+      <image wx:else class='add' src='/image/check_box_sd.png'  data-index='{{index}}' data-text='{{item.classification}}' catchtap='onAddSubscription'/>
+    </view>
+  </view>
+</view>
+<!-- 提示框 -->
+<signal wx:if="{{errorPrompt.length > 0}}" errorPrompt='{{errorPrompt}}'/>

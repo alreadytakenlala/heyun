@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "登陆",
+  "usingComponents": {
+    "signal": "/components/signal/index",
+    "sms": "/components/sms/index"
+  }
+}

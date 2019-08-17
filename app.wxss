@@ -1,0 +1,16 @@
+page {
+  background-color: #fffffb;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  width: 100%;
+}
+.omit {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

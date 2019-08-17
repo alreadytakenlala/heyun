@@ -1,0 +1,161 @@
+.line {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1rpx;
+  background-color: #B7B7B8;
+}
+/*-- 话题标题栏 --*/
+.topic_list {
+  position: fixed;
+  top: 1rpx;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  background-color: #F9F8F6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 999;
+}
+.topic_title_box {
+  width: 88%;
+  height: 100%;
+  overflow-x: scroll;
+  white-space:nowrap;
+}
+.topic_title_box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.topic_title_box text {
+  padding: 0 20rpx;
+  font-size: 32rpx;
+  color: #818181;
+  line-height: 100rpx;
+  text-align: center;
+}
+.topic_title_box text:first-child {
+  width: 15%;
+}
+.topic_title_box .active {
+  color: #3184CA;
+  font-size: 36rpx;
+}
+.topic_list image {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.placeholder_box {
+  width: 100%;
+  height: 100rpx;
+  background-color: #E5E5E5;
+}
+/*-- 搜索栏 --*/
+.search {
+  width: 100%;
+  height: 100rpx;
+  background-color: #CACACC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search image {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  margin-left: -60rpx;
+}
+.search input {
+  box-sizing: border-box;
+  width: 95%;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background-color: #fffffb;
+  font-size: 32rpx;
+  color: #333;
+}
+.search:hover image, search:focus image {
+  visibility: hidden;
+}
+.search input:focus .placeholder, .search input:hover .placeholder {
+  text-align: left;
+  margin-left: 10rpx;
+}
+.search input:focus, .search input:hover {
+  padding-left: 20rpx;
+}
+.placeholder {
+  text-align: center;
+}
+/*-- 文章列表 --*/
+.article_list {
+  width: 100%;
+}
+.article {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #DCDBD9;
+}
+.article_left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+}
+.article_left image {
+  width: 94%;
+  height: 94%;
+}
+.article_right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+}
+.article_right > text:first-child {
+  font-size: 32rpx;
+  line-height: 50rpx;
+}
+.article_description {
+  color: #969696;
+  font-size: 28rpx;
+  height: 100rpx;
+}
+.article_right_down {
+  display: flex;
+  flex-direction: row;
+}
+.article_right_down > text, .readNumber {
+  display: block;
+  width: 33%;
+  color: #CCCCCC;
+  font-size: 24rpx;
+}
+.readNumber {
+  display: flex;
+  justify-content: flex-end;
+}
+.readNumber image {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 10rpx;
+}
+.endView {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.endView text {
+  font-size: 24rpx;
+  color: #999;
+}

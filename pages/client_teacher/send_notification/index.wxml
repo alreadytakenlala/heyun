@@ -1,0 +1,49 @@
+<view class='container'>
+  <!-- 接收对象和通知类型 -->
+  <view class='re_obj'>
+    <label>接收对象</label>
+    <input class='omit' placeholder='请选择接收对象' placeholder-style="font-size:32rpx;color:#EAEAEC" disabled='true' catchtap='showSeleObj' value='{{receiveObj}}'/>
+    <text>{{receiveObjCount}}</text>
+  </view>
+  <view class='noti_type'>
+    <label>通知类型</label>
+    <input value='一般通知' disabled='true'/>
+  </view>
+  <!-- 通知内容 -->
+  <view class='noti_content'>
+    <view class='noti_nav'>
+      <image src='/image/notification_content.png'/>
+      <text>通知内容</text>
+    </view>
+    <view class='n_content'>
+      <textarea hidden='{{showSign}}' placeholder='点击输入内容' placeholder-style="font-size:32rpx;color:#EAEAEC" maxlength='500' auto-height='true' bindinput='contentInput'></textarea>
+      <label>{{wordCount}}/500</label>
+    </view>
+  </view>
+  <!-- 落款 -->
+  <view class='signature' disabled='true' catchtap='showSign'>
+    <label>落款</label>
+    <input value='{{sign}}' disabled='true'/>
+  </view>
+  <signature showSign='{{showSign}}' signatureList='{{signList}}' bind:onHideSign='hideSign' bind:onChanSele='chanSele'/>
+  <!-- 发送选择 -->
+  <view class='timed_send' catchtap='timedSend'>
+    <image src="{{timedSend ?'/image/selection_box_sd.png':'/image/selection_box.png'}}"/>
+    <text>定时发送</text>
+  </view>
+  <view class='send_self' catchtap='sendSelf'>
+    <image src="{{sendSelf ? '/image/selection_box_sd.png':'/image/selection_box.png'}}"/>
+    <text>同时发送给自己</text>
+  </view>
+  <!-- 页脚导航栏 -->
+  <view class='voice'>
+      <view class='voice_text'>
+        <image src='/image/voice_text.png'/>
+        <text>语音转文字</text>
+      </view>
+      <view class='send'>
+        <image src='/image/plane.png'/>
+        <text>发送</text>
+      </view>
+  </view>
+</view>

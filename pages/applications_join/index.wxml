@@ -1,0 +1,50 @@
+<view class='container'>
+  <!-- 选择区域 -->
+  <view class='select_region' catchtap='onSelectCity'>
+    <text>选择区域</text>
+    <text>{{district}}</text>
+    <image class='menu_go' src='/image/menu_go.png'/>
+  </view>
+  <!-- 选择班级 -->
+  <view class='select_region' catchtap='onSelectBj'>
+    <text>选择班级</text>
+    <text>{{bj}}</text>
+    <image class='menu_go' src='/image/menu_go.png'/>
+  </view>
+  <!-- 说明栏 -->
+  <view class='description'>
+    <text>只支持广东地区</text>
+    <view class='des_content'>
+      <view class='des_content_left'>
+        <image src='/image/icon_tips.png'/>
+      </view>
+      <view class='des_content_right'>
+        <text>请确认所在学校，若录入错误，需联系班主任进行更改</text>
+      </view>
+    </view>
+  </view>
+  <!-- 申请加入按钮 -->
+  <view class='btn'>
+    <text class='join_btn' catchtap='onApplicationsJoinClass'>申请加入班级</text>
+  </view>
+  <!-- 说明二 -->
+  <view class='description'>
+    <text class='light_color'>如果没有找到您的班级，是因为您的学校没开通和云教育的业务，请您继续尝试其他服务</text>
+  </view>
+  <!-- 其他服务 -->
+  <view class='btn'>
+    <view class='other_service'>
+      <image src='/image/found_focus_logo.png'/>
+      <text>资讯</text>
+      <text>家庭教育好助手</text>
+    </view>
+  </view>
+  <view class='btn'>
+    <view class='other_service'>
+      <image src='/image/found_study_logo.png'/>
+      <text>学习</text>
+      <text>其实可以快乐</text>
+    </view>
+  </view>
+</view>
+<signal wx:if="{{errorPrompt.length > 0 && errorPrompt.length <= 10}}" errorPrompt='{{errorPrompt}}'/>

@@ -1,0 +1,6 @@
+<view class='container'>
+  <work subject='{{item.subject}}' signature='{{item.signature}}' time='{{item.time}}' content='{{item.content}}' status='{{item.status}}' wx:for='{{workList}}' wx:key='{{index}}' data-index='{{index}}' catchtap='onJumpDetail'/>
+  <view class='endView' wx:if='{{noData}}'>
+    <text>没有更多数据了</text>
+  </view>
+</view>

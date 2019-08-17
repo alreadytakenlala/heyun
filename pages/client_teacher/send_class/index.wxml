@@ -1,0 +1,19 @@
+<view class='container'>
+  <!-- 列表 -->
+  <view class='modules' catchtap='selectAll'>
+    <image wx:if='{{!selectAll}}' src='/image/check_box.png'/>
+    <image wx:else src='/image/check_box_sd.png'/>
+    <text>全选</text>
+  </view>
+  <view class='modules' wx:for='{{classCollection}}' wx:key='{{index}}' data-text='{{index}}' catchtap='selected'>
+    <image wx:if='{{!selected[index]}}' src='/image/check_box.png'/>
+    <image wx:else src='/image/check_box_sd.png'/>
+    <text>{{item}}</text>
+  </view>
+
+  <!-- 确定 -->
+  <view class='complete' catchtap='complete'>
+    <image src='/image/ok.png'/>
+    <text>确定</text>
+  </view>
+</view>

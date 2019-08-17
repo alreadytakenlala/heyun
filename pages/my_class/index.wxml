@@ -1,0 +1,22 @@
+<view class='line'></view>
+<view class='container'>
+  <!-- 班级信息 -->
+  <view class='information'>
+    <view class='info_ico'>
+      <image src='/image/classgroup_bg.png'/>
+    </view>
+    <view class='info_content'>
+      <text>学校: {{school}}</text>
+      <text>班级: {{bj}}</text>
+    </view>
+  </view>
+  <!-- 班级介绍 -->
+  <view class='introduction'>
+    <text>班级介绍:</text>
+    <text>这是一个团结的集体</text>
+  </view>
+  <!-- 加入班级按钮 -->
+  <view class='btn'>
+    <text class='join_btn' catchtap='joinClass'>加入班级</text>
+  </view>
+</view>

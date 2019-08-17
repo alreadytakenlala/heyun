@@ -1,0 +1,42 @@
+page {
+  background-color: #F6F5F4;
+}
+.container > view {
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFF;
+  border-bottom: 1rpx solid #E9E9E9;
+}
+.module image:first-child {
+  width: 70rpx;
+  height: 70rpx;
+  margin: 30rpx;
+}
+.module image:last-child {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content text:first-child {
+  font-size: 32rpx;
+  color: #333;
+}
+.content text:last-child {
+  font-size: 28rpx;
+  color: #9A9A9A;
+}
+.jump_over {
+  position: absolute;
+  right: 30rpx;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #000;
+}

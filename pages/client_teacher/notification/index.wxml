@@ -1,0 +1,46 @@
+<view class='container'>
+  <!-- 收通知列表 -->
+  <view class='receive' wx:if='{{receive}}'>
+    <view class='re_noti' wx:for='{{receiveNoti}}' wx:key='{{index}}' data-text='{{receiveNoti[index]}}' catchtap='showNotiDetails'>
+      <view class='re_noti_content'>
+        <view class='re_type'>
+          <image src='/image/notice_common_v.png'/>
+        </view>
+        <view class='re_info'>
+          <text class='re_name'>来自{{item.name}}老师</text>
+          <text class='re_content'>{{item.content}}</text>
+        </view>
+        <view class='re_go'>
+          <image src='/image/menu_go.png'/>
+        </view>
+      </view>
+      <view class='re_time'>
+        <text>{{item.time}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 发通知 -->
+  <view class='send' wx:if='{{!receive}}'>
+    <view class='send_add' catchtap='sendnoti'>
+      <image src='/image/add.png'/>
+      <text>点击发通知</text>
+    </view>
+    <view class='content'>
+      <image src='/image/send_pri.png'/>
+      <text wx:if='send_noti.length == 0'>您最近没有发送过通知喔！</text>
+    </view>
+  </view>
+</view>
+<!-- 选择通知类型 按钮 -->
+<view class='container'>
+  <view class='hron_but'>
+    <view data-text='1' catchtap='selected'>
+      <image src="{{receive ? '/image/box_sd.png' : '/image/box.png'}}"/>
+      <text>已收通知</text>
+    </view>
+    <view data-text='0' catchtap='selected'>
+      <image src="{{receive ? '/image/plane.png' : '/image/plane_sd.png'}}"/>
+      <text>已发通知</text>
+    </view>
+  </view>
+</view>

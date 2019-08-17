@@ -1,0 +1,9 @@
+<view class='container' data-target='self' catchtap='onHC'>
+  <view class='selected_btn'>
+    <text catchtap='onTakePhoto'>拍照</text>
+    <text catchtap='onOpenAlbum'>从相册选择</text>
+  </view>
+  <view class='cancel'>
+    <text data-target='self' catchtap='onHC'>取消</text>
+  </view>
+</view>

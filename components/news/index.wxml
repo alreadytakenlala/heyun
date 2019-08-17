@@ -1,0 +1,39 @@
+<view class='line'></view>
+<view class='container'>
+  <!-- 专栏标题 -->
+  <view class='topic_list'>
+    <view class='topic_title_box'>
+      <text class="{{selectedTopic == -1 ? 'active':''}}">热点</text>
+      <text class="{{selectedTopic == index ? 'active':''}}" wx:for='{{topicList}}' wx:key='{{index}}' data-index='{{index}}' catchtap='onSwitchTopic'>{{item.title}}</text>
+    </view>
+    <image catchtap='onAddSubscription' src='/image/more_topic.png'/>
+  </view>
+  <view class='placeholder_box'></view>
+    <!-- 搜索栏 -->
+  <view class='search'>
+    <image hidden='{{searchValue.length != 0}}' src='/image/search.png'/>
+    <input value='{{searchValue}}' placeholder='搜索' placeholder-class='placeholder' bindinput='onSearchInput'/>
+  </view>
+  <view class='article_list'>
+    <view class='article' wx:for='{{articleList}}' wx:key='{{index}}'>
+      <view class='article_left'>
+        <image src='{{item.icoUrl}}'/>
+      </view>
+      <view class='article_right'>
+        <text>{{item.title}}</text>
+        <text class='article_description'>{{item.description}}</text>
+        <view class='article_right_down'>
+            <text>{{item.topic}}</text>
+            <text>{{item.time}}</text>
+          <view class='readNumber'>
+            <image src='/image/btn_notshow_pwd.png'/>
+            <text>{{item.readNumber}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='endView' wx:if='{{noData}}'>
+  <text>没有更多数据了</text>
+</view>

@@ -1,0 +1,247 @@
+.container {
+  height: 100%;
+}
+.backImg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 48%;
+  z-index: -1;
+}
+.head {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 35rpx;
+  margin-bottom: -80rpx;
+}
+.nav {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.nav_content {
+  width: 60%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.nav_content text {
+  width: 50%;
+  height: 65rpx;
+  font-size: 32rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30rpx;
+}
+.line {
+  width: 0;
+  height: 50rpx;
+  margin: 0 20rpx;
+  border-right: 1rpx solid #fff;
+}
+.nav_content .active {
+  background-color: #fff;
+  color: #C9ECFF;
+}
+/*-- 表单 --*/
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90rpx;
+}
+.form > view {
+  width: 90%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.username, .password {
+  border-top: 1rpx solid #E0E0E0;
+  font-size: 32rpx;
+  color: #333;
+}
+.username image, .password image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 30rpx;
+}
+.username input, .password input {
+  width: 90%;
+  margin-left: 20rpx;
+}
+.username text {
+  position: fixed;
+  right: 40rpx;
+  width: 200rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  background-color: #DFDFDF;
+  margin-right: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.username text.active {
+  background-color: #F97F2E;
+}
+.password {
+  border-bottom: 1rpx solid #E0E0E0;
+}
+.sumbit {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sumbit text {
+  width: 95%;
+  height: 90%;
+  color: #fff;
+  font-size: 32rpx;
+  background-color: #88C058;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
+}
+.sumbit_raise {
+  margin-top: 30rpx;
+}
+.placeholder_class {
+  font-size: 32rpx;
+  color: #C8C8C8;
+}
+.down {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.down text {
+  font-size: 32rpx;
+  color: #88C058;
+}
+.down_left, .down_right {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.down_left {
+  justify-content: flex-start;
+}
+.down_right {
+  justify-content: flex-end;
+}
+.down_left image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 15rpx;
+}
+.description {
+  width: 90%;
+  font-size: 30rpx;
+  color: #606060;
+  line-height: 60rpx;
+}
+/*-- 错误提示 --*/
+.footer {
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error_prompt {
+  background-color: #606060;
+  min-width: 210rpx;
+  height: 90rpx;
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error_prompt text {
+  font-size: 28rpx;
+  color: #fff;
+}
+/*-- 弹屏错误提示 --*/
+.screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prompt {
+  width: 80%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15rpx;
+}
+.prompt view {
+  width: 100%;
+  border-bottom: 1rpx solid #E0E0E0;
+}
+.title, .content {
+  min-height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title text {
+  font-size: 38rpx;
+  color: #242416;
+}
+.content text {
+  font-size: 32rpx;
+  color: #595757;
+  margin: 20rpx;
+  line-height: 50rpx;
+}
+.prompt_btn {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.prompt_btn text {
+  width: 50%;
+  font-size: 32rpx;
+  color: #88C058;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prompt_btn text:first-child {
+  border-right: 1rpx solid #E0E0E0;
+}

@@ -1,0 +1,43 @@
+.sendbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #E9E9E9;
+  padding: 5rpx 5rpx 10rpx 5rpx;
+}
+.sendbar view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input_text {
+  width: 80%;
+  height: 100%;
+}
+.send_btn {
+  width: 20%;
+  height: 100%;
+}
+.sendbar input {
+  width: 95%;
+  height: 70rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+  color: #333;
+  font-size: 32rpx;
+  padding-left: 20rpx;
+}
+.sendbar text {
+  width: 95%;
+  height: 70rpx;
+  font-size: 32rpx;
+  color: #FFF;
+  background-color: #3184CA;
+  line-height: 70rpx;
+  text-align: center;
+}

@@ -1,0 +1,6 @@
+<view class='send_success'>
+  <view class='send_success_content'>
+    <image src='/image/send_success.png'/>
+    <text>{{promptMsg}}</text>
+  </view>
+</view>

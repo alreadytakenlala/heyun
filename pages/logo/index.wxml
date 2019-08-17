@@ -1,0 +1,70 @@
+<sms showSMS='{{showSMS}}' bind:getVerCode='reallyVerCode' style='position: fixed;'></sms>
+<view class='container'>
+  <image class='backImg' src='/image/login_background_top.png'/>
+  <view class='head'>
+    <image class='logo' src='/image/logo.jpg'/>
+  </view>
+  <view class='nav'>
+    <view class='nav_content'>
+      <text class="{{passwordLogo ? 'active':''}}" data-text="passwordLogo" catchtap='logoMethodChange'>密码登录</text>
+      <view class='line'/>
+      <text class="{{passwordLogo ? '':'active'}}" catchtap='logoMethodChange'>验证码登录</text>
+    </view>
+  </view>
+  <!-- 密码登录 -->
+  <view wx:if="{{passwordLogo}}" class='form'>
+    <view class='username'>
+      <image src='/image/login_personname.png'/>
+      <input type='text' placeholder='手机号/账号' placeholder-class='placeholder_class' value='{{accountNumber}}' bindinput='saveAccountNumber'></input>
+    </view>
+    <view class='password'>
+      <image src='/image/new_pwd_ico.png'/>
+      <input type='password' placeholder='密码' placeholder-class='placeholder_class' value='{{password}}' bindinput='savePassword'></input>
+    </view>
+    <view class='sumbit' catchtap='passwordLogoSumbit'>
+      <text>登录</text>
+    </view>
+    <view class='down'>
+      <view class='down_left'>
+        <image wx:if='{{rememberPW}}' src='/image/check_icon.png' catchtap='rememberPW'/>
+        <image wx:else src='/image/check_box.png' catchtap='rememberPW'/>
+        <text catchtap='rememberPW'>记住密码</text>
+      </view>
+      <view class='down_right'>
+        <text>忘记密码？</text>
+      </view>
+    </view>
+  </view>
+  <!-- 验证码登录 -->
+  <view wx:else class='form'>
+    <view class='username'>
+      <image src='/image/login_personname.png'/>
+      <input placeholder='请输入手机号' placeholder-class='placeholder_class' maxlength='11' value='{{phoneNumber}}' bindinput='savePhoneNumber' style='width: 50%;'></input>
+      <text class="{{phoneNumber.length == 0 ? '':'active'}}" catchtap='obtainVerification'>{{verPrompt.length ? verPrompt : verPrompt + 's'}}</text>
+    </view>
+    <view class='password'>
+      <image src='/image/new_pwd_ico.png'/>
+      <input placeholder='请输入验证码' placeholder-class='placeholder_class' maxlength='6' value='{{verficationCode}}' bindinput='saveVerifcationCode'></input>
+    </view>
+    <text class='description'>该登录方式不支持学生账号和未注册号码</text>
+    <view class='sumbit sumbit_raise'>
+      <text catchtap='verCodeLogo'>登录</text>
+    </view>
+  </view>
+  <signal wx:if="{{errorPrompt.length > 0 && errorPrompt.length <= 10}}" errorPrompt='{{errorPrompt}}'/>
+</view>
+<!-- 弹屏错误 -->
+<view wx:if='{{errorPrompt.length > 10}}' class='container screen'>
+  <view class='prompt'>
+    <view class='title'>
+      <text>温馨提示</text>
+    </view>
+    <view class='content'>
+      <text>{{errorPrompt}}</text>
+    </view>
+    <view class='prompt_btn'>
+      <text catchtap='cancel'>取消</text>
+      <text catchtap='registered'>立即注册</text>
+    </view>
+  </view>
+</view>

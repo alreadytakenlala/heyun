@@ -1,0 +1,35 @@
+<view class='container'>
+  <!-- 布置作业 -->
+  <view wx:if='{{showType == 1}}' class='release'>
+    <view class='addwork'>
+      <image src='/image/add.png' catchtap='homework'/>
+      <text catchtap='homework'>点击布置作业</text>
+    </view>
+    <view class="content">
+      <image src='/image/gd_homework_empty.png'/>
+    </view>
+  </view>
+  <!-- 已发布作业 -->
+  <view wx:if='{{showType == 0}}' class='already_released' wx:for='{{workList}}' wx:key='{{index}}'>
+    <image src='/image/clock.png'/>
+    <view class='ar_content'>
+      <text>{{item.content}}</text>
+      <text>{{item.time}}</text>
+    </view>
+  </view>
+</view>
+<!-- 选择作业类型 按钮 -->
+<view class='container'>
+  <view class='work_but'>
+    <view data-text='0' catchtap='selected'>
+      <image wx:if='{{showType == 0}}' src="/image/box_sd.png"/>
+      <image wx:else src="/image/box.png"/>
+      <text>已发布作业</text>
+    </view>
+    <view data-text='1' catchtap='selected'>
+      <image wx:if='{{showType == 1}}' src="/image/plane_sd.png"/>
+      <image wx:else src="/image/plane.png"/>
+      <text>发布作业</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='message' wx:if='{{msgs.length > 0}}'>
+    消息
+  </view>
+  <view class='no_message' wx:else>
+    <image src='/image/nonews.png'/>
+    <text>当前还没有消息记录</text>
+  </view>
+</view>
+<navBar selected='{{selectedNav}}'/>

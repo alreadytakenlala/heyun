@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='items' wx:for='{{items}}' wx:key='{{index}}'>
+    <view class="{{chooseItems[index] ? 'selected':''}}" data-text='{{index}}' catchtap='chooseAdd'>
+      <text>{{item}}</text>
+    </view>
+  </view>
+  <view catchtap='showHomeworkView' class='complete'>
+    <button>完成</button>
+  </view>
+</view>

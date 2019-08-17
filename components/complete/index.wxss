@@ -1,0 +1,21 @@
+/*-- 完成按钮 --*/
+.complete {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-top: 1rpx solid #C8C8C5;
+  background-color: #CACACC;
+}
+.complete image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.complete text {
+  margin-left: 30rpx;
+}

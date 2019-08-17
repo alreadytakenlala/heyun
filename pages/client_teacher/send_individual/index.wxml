@@ -1,0 +1,42 @@
+<view class='container'>
+  <!-- 搜索栏 -->
+  <view class='search'>
+    <image src='/image/search.png'/>
+    <input placeholder='搜索人名或手机号' placeholder-class='placeholder'/>
+  </view>
+  <!-- 全选栏 -->
+  <view class='module'>
+    <view class='list_head' catchtap='selectAll'>
+      <image wx:if='{{!selectAll}}' src='/image/check_box.png'/>
+      <image wx:else src='/image/check_box_sd.png'/>
+      <text>全选</text>
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class='module' wx:for='{{modules}}' wx:key='{{index}}'>
+    <view class='list_head' data-target='self' data-text='{{index}}' catchtap='dropDown'>
+      <image wx:if='{{!selectedPerson[index]}}' src='/image/check_box.png' data-text='{{index}}' catchtap='selectedModu'/>
+      <image wx:else src='/image/check_box_sd.png' data-text='{{index}}' catchtap='selectedModu'/>
+      <text data-text='{{index}}' catchtap='selectedModu'>{{item.title}}</text>
+      <view class='drop'>
+        <text data-target='self' data-text='{{index}}'>({{item.persons.length}})</text>
+        <image class="{{dropDownModu[index] ? 'rotate90':''}}" src='/image/group_right_arrows_icon.png' data-target='self' data-text='{{index}}'/>
+      </view>
+    </view>
+    <!-- 人物列表 -->
+    <view wx:if='{{dropDownModu[index]}}' class='persons' wx:for='{{item.persons}}'  wx:for-item='person' wx:for-index='seat' wx:key='{{seat}}'  data-index='{{index}}' data-seat='{{seat}}' catchtap='selectedPerson'>
+      <image wx:if='{{!selectedPerson[index].persons[seat]}}' src='/image/check_box.png'/>
+      <image wx:else src='/image/check_box_sd.png'/>
+      <image class='logo' src='/image/logo.png'/>
+      <view class='person_name'>
+        <text wx:if="{{!teacherPage}}" class='parent'>{{person}}家长</text>
+        <text class="{{teacherPage ? 'grown':'son'}}">{{person}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 确定 -->
+  <view class='complete' catchtap='complete'>
+    <image src='/image/ok.png'/>
+    <text>确定</text>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<!-- 签到栏 -->
+<view class='container'>
+  <view class='check_in' wx:if='{{userInfo != null}}'>
+      <view class='cn_left'><image src='/image/logo.png'/></view>
+      <view class='cn_midden'><view>
+          <text class='cn_name'>{{userInfo.bj ? userInfo.name : '还没有绑定名字'}}</text>
+          <text class='cn_bj'>{{userInfo.bj ? userInfo.bj:'还没有加入班级'}}</text>
+      </view></view>
+      <view class='cn_right'><button catchtap='checkIn'>{{checkIn ? "已签到":"签到"}}</button></view>
+    </view>
+</view>
+<!-- 列表 -->
+<view class='container'>
+  <view class='modules' wx:for='{{modules}}' wx:key='{{index}}'>
+    <view class='module' data-text='{{item.title}}' catchtap='showListView'>
+      <image src='{{item.icoUrl}}'/>
+      <view class='narration'>
+        <text class='title'>{{item.title}}</text>
+        <text class='description'>{{item.description}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 登录弹屏 -->
+<view wx:if="{{!userInfo.accountNumber}}" class='container logo_screen'>
+  <view class='content'>
+    <image src='/image/register_after_enter_class_icon.png'/>
+    <view class='logo' catchtap='showLogoPage'>
+      <text>我有账号，马上登陆</text>
+    </view>
+    <view class='register' catchtap='registered'>
+      <text>没有账号,立即注册</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "添加订阅",
+  "usingComponents": {
+    "signal": "/components/signal/index"
+  }
+}

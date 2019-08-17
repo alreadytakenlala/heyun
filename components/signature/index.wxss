@@ -1,0 +1,55 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.container text {
+  font-size: 32rpx;
+}
+.signaturebox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.signaturebox view {
+  width: 90%;
+  height: 80rpx;
+  background-color: #fffffb;
+  border-bottom: 1rpx solid #C8C8C5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav text {
+  color: #333;
+}
+.signature text {
+  color: #88C058;
+}
+.signature image {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 8%;
+}
+.cancel {
+  width: 90%;
+  height: 80rpx;
+  color: #fffffb;
+  background-color: #FF3535;
+  margin-bottom: 30rpx;
+  border-radius: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.claim {
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #C8C8C5;
+  display: flex;
+  flex-direction: row;
+}
+.claim .content {
+  width: 85%;
+  height: 100%;
+}
+.claim .img {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.content text {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 100rpx;
+  margin: 0 30rpx;
+  display: -webkit-box; /* 流体布局 */
+  -webkit-line-clamp: 1; /* 多行文字溢出点点点... */
+  -webkit-box-orient: vertical; /* 从上向下垂直排列子元素 */
+  word-break: break-all; /* 允许在单词内换行 */
+  text-overflow: ellipsis; /* 显示省略符号来代表被修剪的文本 */
+  overflow: hidden;
+}
+.img image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+}
+.active text {
+  color: #0C98DB;
+}
+.determine {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

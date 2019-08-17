@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/*-- 发布作业 --*/
+.release {
+  width: 100%;
+}
+.addwork {
+  width: 100%;
+  height: 200rpx;
+  margin-top: 30rpx;
+  background-color: #FEF2E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.nullList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.addwork image {
+  width: 65rpx;
+  height: 65rpx;
+}
+.addwork text {
+  font-size: 28rpx;
+  color: #E1A674;
+}
+.content {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content image {
+  width: 200rpx;
+  height: 250rpx;
+  position: absolute;
+  top: 40%;
+}
+/*-- 已发布作业列表 --*/
+.already_released {
+  width: 95%;
+  height: 150rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1rpx solid #C8C8C5;
+}
+.already_released image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 10rpx;
+}
+.ar_content {
+  width: 80%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15rpx;
+}
+.ar_content text {
+  font-size: 32rpx;
+  color: #333;
+  display: -webkit-box; /* 流体布局 */
+  -webkit-line-clamp: 1; /* 多行文字溢出点点点... */
+  -webkit-box-orient: vertical; /* 从上向下垂直排列子元素 */
+  word-break: break-all; /* 允许在单词内换行 */
+  text-overflow: ellipsis; /* 显示省略符号来代表被修剪的文本 */
+  overflow: hidden;
+  line-height: 60rpx;
+}
+.ar_content text:last-child {
+  color: #959394;
+  font-size: 28rpx;
+}
+
+/*-- 选择显示类型 按钮 --*/
+.work_but {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #C8C8C5;
+  background-color: #fffffb;
+}
+.work_but button {
+  width: 50%;
+  background: none;
+  font-size: 26rpx;
+  color: #959394;
+}
+.work_but view {
+  width: 50%;
+  height: 110rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work_but image {
+  width: 50rpx;
+  height: 60rpx;
+}
+.work_but text {
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #959394;
+}

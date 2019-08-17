@@ -1,0 +1,7 @@
+<view class='nav_bar container'>
+  <view class='nav' data-text='{{index}}' wx:for='{{navModu}}' wx:key='{{index}}' catchtap='selected'>
+    <image wx:if='{{selected == index}}' src='{{item.activeIco}}'/>
+    <image wx:else src='{{item.defaultIco}}'/>
+    <text class="{{selected == index ? 'active':''}}">{{item.title}}</text>
+  </view>
+</view>

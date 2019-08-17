@@ -1,0 +1,17 @@
+<view class='line'></view>
+<view class='container'>
+  <view class='head'>
+    <text>来自:{{name}}老师</text>
+  </view>
+  <view class='content'>
+    <text>{{content}}</text>
+    <view>
+      <text>{{time}}</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <image catchtap='onSRC' src='/image/reply.png'/>
+    <text catchtap='onSRC'>回复</text>
+  </view>
+</view>
+<sendbar wx:if='{{reply}}'/>

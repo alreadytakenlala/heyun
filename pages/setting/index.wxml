@@ -1,0 +1,52 @@
+<view class='container'>
+  <view class='modules'>
+    <view wx:if='{{accountNumber}}' class='module' catchtap='msgNoti'>
+      <text>消息通知</text>
+      <image wx:if='{{msgNoti}}' class='select' src='/image/switch_on.png'/>
+      <image wx:else class='select' src='/image/switch_off.png'/>
+    </view>
+    <view class='module'>
+      <text>消除缓存</text>
+      <image class='open' src='/image/menu_go.png'/>
+    </view>
+    <view wx:if='{{accountNumber}}' class='module' catchtap='draftSendNotiReserved'>
+      <text>草稿箱的通知发送后仍保留</text>
+      <image wx:if='{{draftSendNotiReserved}}' class='select' src='/image/switch_on.png'/>
+      <image wx:else class='select' src='/image/switch_off.png'/>
+    </view>
+  </view>
+  <view wx:if='{{accountNumber}}' class='modules'>
+    <view class='module' catchtap='pwLock'>
+      <text>密码锁设置</text>
+      <image wx:if='{{pwLock}}' class='select' src='/image/switch_on.png'/>
+      <image wx:else class='select' src='/image/switch_off.png'/>
+    </view>
+    <view wx:if='{{accountNumber}}' class='module'>
+      <text>修改密码</text>
+      <image class='open' src='/image/menu_go.png'/>
+    </view>
+  </view>
+  <view class='modules'>
+    <view class='module'>
+      <text>检查更新</text>
+      <text>1.0.1</text>
+    </view>
+    <view class='module'>
+      <text>功能介绍</text>
+      <image class='open' src='/image/menu_go.png'/>
+    </view>
+    <view class='module'>
+      <text>欢迎页</text>
+      <image class='open' src='/image/menu_go.png'/>
+    </view>
+  </view>
+  <view class='modules'>
+    <view wx:if='{{accountNumber}}' class='module'>
+      <text>举报</text>
+      <image class='open' src='/image/menu_go.png'/>
+    </view>
+  </view>
+  <view wx:if='{{accountNumber}}' class='logout'>
+    <text catchtap='logout'>退出登录</text>
+  </view>
+</view>

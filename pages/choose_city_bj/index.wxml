@@ -1,0 +1,15 @@
+<view class='line'></view>
+<view class='container'>
+  <!-- 搜索栏 -->
+  <view class='search'>
+    <input placeholder='搜索' placeholder-class='placeholder'/>
+  </view>
+  <!-- 选中栏 -->
+  <view class='selected_box'>
+    <text>{{selectData}}</text>
+  </view>
+  <!-- 选项 -->
+  <view class='option' wx:for='{{option}}' wx:key='{{index}}' data-index='{{index}}' catchtap='onSelected'>
+    <text>{{item.name ? item.name : item}}</text>
+  </view>
+</view>
